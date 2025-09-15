@@ -15,12 +15,10 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to FastAPI! This is 1st deployment"}
+    return {"message": "Welcome to FastAPI! This is 14:54 deployment"}
 
 @app.get("/hello/{name}")
 def hello(name: str):
     return {"message": f"Hello, {name}!"}
 
-@app.get("/hello1/{name}")
-def hello(name: str):
-    return {"message": f"Hello, {name}!"}
+
