@@ -20,3 +20,7 @@ def root():
 @app.get("/hello/{name}")
 def hello(name: str):
     return {"message": f"Hello, {name}!"}
+
+@app.get("/hello1/{name}")
+def hello(name: str):
+    return {"message": f"Hello, {name}!"}
